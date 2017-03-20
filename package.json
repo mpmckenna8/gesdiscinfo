@@ -1,0 +1,27 @@
+{
+  "name": "gesdiscinfo",
+  "version": "0.0.1",
+  "description": "Examples of scraping nasa data metadata",
+  "main": "getcollections.js",
+  "dependencies": {
+    "request": "^2.81.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node getcollections.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mpmckenna8/gesdiscinfo.git"
+  },
+  "keywords": [
+    "nasa",
+    "metadata"
+  ],
+  "author": "mpmckenna8",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mpmckenna8/gesdiscinfo/issues"
+  },
+  "homepage": "https://github.com/mpmckenna8/gesdiscinfo#readme"
+}
