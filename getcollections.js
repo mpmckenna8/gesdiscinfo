@@ -32,7 +32,7 @@ function cb (err, res, body){
   //  console.log(o)
     writeobj(JSON.stringify(o) + '\n');
   }
-  console.log(entries.length, index)
+  console.log("Found " + entries.length + " entries and on page: " index)
   if(entries.length > 0){
     reqcollection(i + 1);
   }

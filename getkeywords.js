@@ -14,7 +14,6 @@ var filename = "keywords-" + keywords[0] + ".ndjson"
 var writestream = fs.createWriteStream(filename)
 
 
-
 request(url, cb);
 
 function cb (err, res, body){
@@ -22,12 +21,12 @@ function cb (err, res, body){
     console.log(err);
     throw err;
   }
-//  console.log('req succusss!!!, ', res)
-  console.log( JSON.parse(body) );
   for(i of JSON.parse(body).category ){//body.category){
   //  console.log(JSON.stringify(i) + '\n')
     writestream.write(JSON.stringify(i) + '\n')
   }
+
+  console.log('done querying, there should now be a file called: ', filename)
 
   writestream.end();
 }
